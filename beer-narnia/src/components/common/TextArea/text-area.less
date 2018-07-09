@@ -1,0 +1,53 @@
+.text-area-description {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  ::-ms-clear, ::-ms-reveal {
+    display: none;
+  }
+
+  label {
+    padding-bottom: 12px;
+    height: 19px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    color: @colorTextLabels;
+  }
+
+  .input-and-icon {
+    border-bottom: 1px solid @colorBorderUnderLine;
+    border-top: 1px solid @colorBorderUnderLine;
+    position: relative;
+    margin-top: 16px;
+
+    textarea {
+      border-width: 0;
+      width: 448px;
+      height: 130px;
+      padding-bottom: 7px;
+      resize: none;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea::placeholder {
+      font-family: 'Roboto', sans-serif;
+      width: 343px;
+      height: 16px;
+      font-size: 13.5px;
+      padding-top: 6px;
+    }
+
+    i {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}

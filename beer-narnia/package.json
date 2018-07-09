@@ -1,0 +1,56 @@
+{
+  "name": "beer-narnia",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "less:prod": "lessc ./styles/index.less ./dist/styles.css",
+    "eslint": "eslint --ext .js --ext .jsx src"
+  },
+  "pre-commit": [
+    "eslint"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-plugin-css-modules": "^2.7.5",
+    "eslint-plugin-react": "^7.9.1",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "pre-commit": "^1.2.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "ajax": "0.0.4",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.2",
+    "jquery": "^3.3.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-notifications": "^1.4.3",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "recharts": "^1.0.0-beta.10",
+    "redux": "^4.0.0"
+  }
+}

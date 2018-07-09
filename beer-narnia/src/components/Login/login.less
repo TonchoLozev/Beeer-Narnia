@@ -1,0 +1,53 @@
+@import url('../../assets/styles/variables');
+.form-login {
+  margin-top: 135px;
+  margin-bottom: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+
+  .login {
+    display: flex;
+    flex-direction: column;
+
+    .underline {
+      width: 30px;
+      height: 4px;
+      background-color: @colorTextLabels;
+      margin-top: 20px;
+      margin-right: 440px;
+    }
+
+    .login-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-top: 20px;
+
+    }
+  }
+}
+
+.loginTitle {
+  padding: 0;
+  strong{
+    font-weight: bold;
+  }
+  width: 419px;
+  height: 32px;
+  font-size: 27px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: @colorTextLabels;
+}
+
+.error{
+  display: none;
+}
+.show-error{
+  display: block;
+}

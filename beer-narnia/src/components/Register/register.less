@@ -1,0 +1,57 @@
+@import url('../../assets/styles/variables');
+
+.form-register {
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+
+  .register {
+    margin-bottom: 25px;
+
+    .underline {
+      width: 30px;
+      height: 4px;
+      background-color: @colorTextLabels;
+      margin-top: 20px;
+      margin-right: 440px;
+    }
+
+    .register-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-top: 20px;
+
+    }
+  }
+}
+
+.register-title {
+  padding: 0;
+  margin-bottom: 0;
+  strong{
+    font-weight: bold;
+  }
+  width: 419px;
+  height: 32px;
+  font-size: 27px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: @colorTextLabels;
+}
+
+.error{
+  display: none;
+}
+.show-error{
+  display: block;
+}
+
+.password-requirements{
+  font-size: 11px;
+}
