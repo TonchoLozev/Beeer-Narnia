@@ -33,14 +33,19 @@ class Home extends PureComponent {
     }
 
     componentDidMount() {
-        const {initHomeStore} = this.props;
+        const {initHomeStore,cart} = this.props;
         auth.login('guest', 'guest').then(res => {
             sessionStorage.setItem('authtoken', res._kmd.authtoken);
+            sessionStorage.setItem('cart', JSON.stringify(cart));
             beers.getAllBeers().then(allBeers => initHomeStore(allBeers));
         });
-
     }
 
+    componentWillUnmount(){
+        const {cart} = this.props;
+        console.log(cart);
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+    }
 
     render() {
         const {username, allBeers} = this.props;
@@ -48,7 +53,7 @@ class Home extends PureComponent {
 
         const indexOfLastTodo = currentPage * articlesPerPage;
         const indexOfFirstTodo = indexOfLastTodo - articlesPerPage;
-        const currentTodos = allBeers.slice(indexOfFirstTodo, indexOfLastTodo);
+        const beersToShow = allBeers.slice(indexOfFirstTodo, indexOfLastTodo);
 
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(allBeers.length / articlesPerPage); i++) {
@@ -67,12 +72,12 @@ class Home extends PureComponent {
             );
         });
         return (
-            <div className={currentTodos.length < 5 ? 'home-with-less-beers' : 'home'}>
+            <div className={beersToShow.length < 5 ? 'home-with-less-beers' : 'home'}>
                 <div className="welcome">
                     {username !== '' ?
                         <p>Welcome, {username}!</p> : ''}
                 </div>
-                <BeerBoxList allBeers={currentTodos} onBlur={this.clearCount}/>
+                <BeerBoxList pageNum={currentPage} beersToShow={beersToShow}/>
                 <ul className="page-numbers">
                     {renderPageNumbers}
                 </ul>
@@ -85,6 +90,7 @@ export default connect(
     state => ({
         username: state.User.get('username'),
         allBeers: state.Home.get('allBeers'),
+        cart: state.Cart.get('cart')
     }),
     {
         initHomeStore

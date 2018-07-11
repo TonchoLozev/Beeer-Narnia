@@ -19,15 +19,24 @@ class Header extends PureComponent {
         const {deleteUserStore} = this.props;
 
         deleteUserStore();
-        auth.logout().then(sessionStorage.clear());
+        auth.logout().then(ress => {
+            sessionStorage.removeItem('roleId');
+            sessionStorage.removeItem('authtoken');
+            sessionStorage.removeItem('username');
+            sessionStorage.removeItem('email');
+            sessionStorage.removeItem('userId');
+        });
         NotificationManager.info('You are logged out now');
         auth.login('guest', 'guest').then(res => sessionStorage.setItem('authtoken', res._kmd.authtoken));
     }
 
     render() {
-        const {onClick, username} = this.props;
+        const {onClick, username, cart} = this.props;
         return (<div className="headerNav">
-            <Button nameClass="navButton" label="Cart"/>
+            <div className="cartButton">
+                <Button nameClass="navButton" label="Cart" icon="icon-cart"/>
+                <i className="itemsInfo">{cart.length}</i>
+            </div>
             <Button nameClass="navButton" label="Home" link='/' onClick={onClick}/>
             {username !== '' ?
                 <Button nameClass="navButton" label="Logout" onClick={this.logoutFunc}/> :
@@ -42,12 +51,14 @@ class Header extends PureComponent {
 
 export default connect(
     state => ({
-        username: state.User.get('username')
+        username: state.User.get('username'),
+        cart: state.Cart.get('cart')
     }),
     {
         deleteUserStore
     }
-)(Header);
+)
+(Header);
 
 Header.propTypes = {
     onClick: PropTypes.func,

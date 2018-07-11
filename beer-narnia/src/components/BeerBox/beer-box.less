@@ -1,6 +1,6 @@
 .beer-box {
   width: 220px;
-  height: 350px;
+  height: 370px;
   margin-bottom: 35px;
   display: flex;
   flex-direction: column;
@@ -9,27 +9,38 @@
   margin-right: 50px;
   margin-left: 50px;
 
-  .beer-box-buttons{
+  .beer-box-buttons {
     display: flex;
-  }
+    border-bottom: 1px solid @colorBorderUnderLine;
 
-  &:hover{
-    background: @colorBeerBoxBackgroundHover;
-  }
+    .beer-box-count {
+      width: 40px;
+      border-width: 0;
+      padding-bottom: 7px;
+      text-align: center;
+      &:focus {
+        outline: none;
+      }
 
-  img {
-    height: 200px;
-    width: 165px;
-
-    &:hover{
-      cursor: pointer;
+      ::-ms-clear, ::-ms-reveal {
+        display: none;
+      }
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+      }
     }
-  }
-  span{
-    width: 50%;
-  }
-  .beer-box-price{
-    font-size: 15px;
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+      padding-right: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
   p {
     font-size: 12px;
@@ -75,4 +86,39 @@
     background: white;
   }
 }
+
+.hovered {
+  background: @colorBeerBoxBackgroundHover;
+}
+
+img {
+  height: 200px;
+  width: 165px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+span {
+  width: 50%;
+}
+
+.beer-box-price {
+  font-size: 15px;
+}
+
+
+
+.add-button{
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
 
