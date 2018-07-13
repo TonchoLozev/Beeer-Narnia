@@ -1,0 +1,112 @@
+.beer-details-editable {
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    height: 355px;
+    width: 250px;
+    display: flex;
+    align-self: center;
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  input {
+    margin-bottom: 15px;
+    border-width: 0;
+    border-bottom: 1px solid @colorBorderUnderLine;
+    padding-bottom: 7px;
+    text-align: center;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    border-width: 0;
+    border-bottom: 1px solid @colorBorderUnderLine;
+    min-height: 70px;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .beer-box-buttons {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid @colorBorderUnderLine;
+
+    .beer-box-count {
+      width: 40px;
+      border-width: 0;
+      padding-bottom: 7px;
+      text-align: center;
+      &:focus {
+        outline: none;
+      }
+
+      ::-ms-clear, ::-ms-reveal {
+        display: none;
+      }
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+      }
+    }
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+      padding-right: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+
+    button {
+      font-size: 15px;
+      background: none;
+      border: none;
+      padding: 0;
+      outline: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .save-changes-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+}

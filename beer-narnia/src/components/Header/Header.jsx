@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {NotificationManager} from 'react-notifications';
 import classnames from "classnames";
+import {withRouter} from 'react-router-dom';
 
 import Button from '../common/Button/Button.jsx';
 
@@ -20,7 +21,7 @@ class Header extends PureComponent {
     }
 
     logoutFunc() {
-        const {deleteUserStore, updateIsAdmin} = this.props;
+        const {deleteUserStore, updateIsAdmin, history} = this.props;
 
         deleteUserStore();
         auth.logout().then(res => {
@@ -30,9 +31,9 @@ class Header extends PureComponent {
             sessionStorage.removeItem('email');
             sessionStorage.removeItem('userId');
             updateIsAdmin(isAdmin());
+            history.push('/');
         });
         NotificationManager.info('You are logged out now');
-        auth.login('guest', 'guest').then(res => sessionStorage.setItem('authtoken', res._kmd.authtoken));
     }
 
     render() {
@@ -47,7 +48,6 @@ class Header extends PureComponent {
                 <i className={itemsInfo}>{cartItems}</i>
             </div>
             <Button nameClass="navButton" label="Home" link='/' onClick={onClick}/>
-            {checkIsAdmin ? <Button nameClass="navButton" label="Admins" link='/admins' onClick={onClick}/> : ''}
             {username !== '' ? <Button nameClass="navButton" label="Logout" onClick={this.logoutFunc}/> :
                 <div className="authBtns">
                     <Button nameClass="navButton" label="Login" link='/login' onClick={onClick}/>
@@ -62,20 +62,18 @@ export default connect(
     state => ({
         username: state.User.get('username'),
         cartItems: state.Cart.get('cartItems'),
-        checkIsAdmin: state.User.get('checkIsAdmin')
     }),
     {
         deleteUserStore,
         updateIsAdmin
     }
 )
-(Header);
+(withRouter(Header));
 
 Header.propTypes = {
     onClick: PropTypes.func,
     deleteUserStore: PropTypes.func,
     updateIsAdmin: PropTypes.func,
     username: PropTypes.string,
-    cartItems: PropTypes.number,
-    checkIsAdmin: PropTypes.bool
+    cartItems: PropTypes.number
 };

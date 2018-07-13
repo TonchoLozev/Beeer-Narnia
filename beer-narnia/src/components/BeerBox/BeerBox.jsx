@@ -1,12 +1,13 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import {withRouter} from 'react-router-dom';
 
 import {connect} from "react-redux";
 
 import updateCart from '../../actions/updateCart';
 import updateCartItems from '../../actions/updateCartItems';
-import initHomeStore from "../../actions/initHomeStore";
+import setBeerId from '../../actions/BeerActions/setBeerId';
 
 
 
@@ -21,6 +22,20 @@ class BeerBox extends PureComponent {
         this.unHoverBox = this.unHoverBox.bind(this);
         this.plusOneCount = this.plusOneCount.bind(this);
         this.minusOneCount = this.minusOneCount.bind(this);
+        this.openBeerDetails = this.openBeerDetails.bind(this);
+    }
+
+    openBeerDetails(event){
+        const {pageNum, allBeers, history, setBeerId, beerId} = this.props;
+
+        const indexOfBeerToGet = Number(event.target.getAttribute('index'));
+        const magicNumber = ((pageNum * 8) - 8) + indexOfBeerToGet;
+
+        const beer = allBeers[magicNumber];
+
+        setBeerId(beer._id);
+        sessionStorage.setItem('beerId', beer._id);
+        history.push('/beer');
     }
 
     changeBeerCount(event) {
@@ -102,7 +117,7 @@ class BeerBox extends PureComponent {
                 onMouseLeave={this.unHoverBox}
                 id={id}
             >
-                <img src={image} alt={name}/>
+                <img index={index} src={image} alt={name} onClick={this.openBeerDetails}/>
                 <label>{name}</label>
                 <p>{description}</p>
                 <label className="beer-box-price">{price}&euro;</label>
@@ -124,22 +139,24 @@ class BeerBox extends PureComponent {
 export default connect(
     state => ({
         cart: state.Cart.get('cart'),
-        allBeers: state.Home.get('allBeers')
+        allBeers: state.Home.get('allBeers'),
+        beerId: state.Beer.get('beerId')
     }),
     {
         updateCart,
-        updateCartItems
+        updateCartItems,
+        setBeerId
     }
-)(BeerBox);
+)(withRouter(BeerBox));
 
 BeerBox.propTypes = {
     name: PropTypes.string,
     description: PropTypes.string,
-    price: PropTypes.number,
     image: PropTypes.string,
     id: PropTypes.number,
     updateCart: PropTypes.func,
     allBeers: PropTypes.array,
-    updateCartItems: PropTypes.func
+    updateCartItems: PropTypes.func,
+    setBeerId: PropTypes.func
 };
 

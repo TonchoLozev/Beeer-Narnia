@@ -11,8 +11,10 @@ class Cart extends PureComponent {
 
     render() {
         const {cartItems} = this.props;
+        console.log(cartItems)
         return (
-            <div className={cartItems < 2 ? 'cart-with-less-beers' : 'cart'}>
+            <div className="cart">
+                {cartItems === 0 ? <p>Cart is empty</p> : ''}
                 <CartItemsList/>
             </div>
         );

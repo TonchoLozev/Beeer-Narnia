@@ -33,12 +33,16 @@ class Home extends PureComponent {
     }
 
     componentDidMount() {
-        const {initHomeStore,cart} = this.props;
-        auth.login('guest', 'guest').then(res => {
-            sessionStorage.setItem('authtoken', res._kmd.authtoken);
-            sessionStorage.setItem('cart', JSON.stringify(cart));
+        const {initHomeStore, cart} = this.props;
+        if (!auth.isAuth()) {
+            auth.login('guest', 'guest').then(res => {
+                sessionStorage.setItem('authtoken', res._kmd.authtoken);
+                sessionStorage.setItem('cart', JSON.stringify(cart));
+                beers.getAllBeers().then(allBeers => initHomeStore(allBeers));
+            });
+        }else{
             beers.getAllBeers().then(allBeers => initHomeStore(allBeers));
-        });
+        }
     }
 
     render() {

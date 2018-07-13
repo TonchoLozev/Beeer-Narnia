@@ -18,3 +18,12 @@ export const CLEAR_BEER_COUNT = 'CLEAR_BEER_COUNT';
 
 export const UPDATE_CART_STORE = 'UPDATE_CART_STORE';
 export const UPDATE_CART_ITEMS = 'UPDATE_CART_ITEMS';
+
+export const SET_BEER = 'SET_BEER';
+export const SET_BEER_ID = 'SET_BEER_ID';
+export const SET_BEER_NAME = 'SET_BEER_NAME';
+export const SET_BEER_COUNTRY = 'SET_BEER_COUNTRY';
+export const SET_BEER_PRICE = 'SET_BEER_PRICE';
+export const SET_BEER_TYPE  = 'SET_BEER_TYPE';
+export const SET_BEER_DESCRIPTION = 'SET_BEER_DESCRIPTION';
+export const SET_BEER_IMG = 'SET_BEER_IMG';

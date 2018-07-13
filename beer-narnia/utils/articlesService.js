@@ -6,25 +6,26 @@ export const beers = (() => {
         return requester.get('appdata', endpoint, 'kinvey');
     }
 
+
+    function getBeer(beerId) {
+        let endpoint = `beers/`+ beerId;
+        return requester.get('appdata', endpoint, 'kinvey')
+    }
+
     function createPost(author, title, description, url, imageUrl) {
-        let data = {author, title, description, url, imageUrl}
+        let data = {author, title, description, url, imageUrl};
         return requester.post('appdata', 'posts', 'kinvey', data)
     }
 
-    function editPost(postId, author, title, description, url, imageUrl) {
-        let endpoint = `posts/${postId}`;
-        let data = {author, title, description, url, imageUrl};
+    function editBeer(beerId, name, type, price, description, country, img) {
+        let endpoint = `beers/${beerId}`;
+        let data = {name, type, price, description, country, img};
         return requester.update('appdata', endpoint, 'kinvey', data)
     }
 
-    function deletePost(postId) {
-        let endpoint = `posts/${postId}`;
+    function deleteBeer(beerId) {
+        let endpoint = `beers/${beerId}`;
         return requester.remove('appdata', endpoint, 'kinvey')
-    }
-
-    function getMyPosts(username) {
-        let endpoint = `posts?query={"author":"${username}"}&sort={"_kmd.ect": -1}`;
-        return requester.get('appdata', endpoint, 'kinvey')
     }
 
     function getPostDetails(postId) {
@@ -34,10 +35,10 @@ export const beers = (() => {
 
     return {
         getAllBeers,
+        getBeer,
         createPost,
-        editPost,
-        deletePost,
-        getMyPosts,
+        editBeer,
+        deleteBeer,
         getPostDetails
     };
 })();

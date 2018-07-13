@@ -2,33 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaee8910-ec20-4582-8b32-17bfdb02f613" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/updateIsAdmin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Admins/Admins.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Admins/admins.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/CartItem/cart-item.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/CartItemsList/CartItemsList.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/CartItemsList/cart-items-list.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/utils/usersService.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerDescription.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerId.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerImg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerName.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerPrice.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerType.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Beer/Beer.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Beer/beer.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerDetails/BeerDetails.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerDetails/beer-details.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerDetailsEditable/BeerDetailsEditable.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerDetailsEditable/beer-details-editable.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/beer-narnia/src/reducers/BeerDetails.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/actions/updateCartItems.js" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/updateCartItems.js" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/package-lock.json" afterPath="$PROJECT_DIR$/beer-narnia/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/package.json" afterPath="$PROJECT_DIR$/beer-narnia/package.json" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/assets/styles/components/layouts.less" afterPath="$PROJECT_DIR$/beer-narnia/src/assets/styles/components/layouts.less" />
       <change beforePath="$PROJECT_DIR$/beer-narnia/src/assets/styles/index.less" afterPath="$PROJECT_DIR$/beer-narnia/src/assets/styles/index.less" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.js" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.jsx" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/beer-box.less" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/beer-box.less" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/BeerBoxList/BeerBoxList.js" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerBoxList/BeerBoxList.jsx" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Admins/Admins.jsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Admins/admins.less" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeer.js" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.jsx" afterPath="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.jsx" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx" afterPath="$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx" />
       <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Header/header.less" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Header/header.less" />
       <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Home/Home.jsx" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Home/Home.jsx" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Login/Login.jsx" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Login/Login.jsx" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/common/Button/Button.jsx" afterPath="$PROJECT_DIR$/beer-narnia/src/components/common/Button/Button.jsx" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/common/Button/button.less" afterPath="$PROJECT_DIR$/beer-narnia/src/components/common/Button/button.less" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Home/home.less" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Home/home.less" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/components/Login/login.less" afterPath="$PROJECT_DIR$/beer-narnia/src/components/Login/login.less" />
       <change beforePath="$PROJECT_DIR$/beer-narnia/src/constants/action-types.js" afterPath="$PROJECT_DIR$/beer-narnia/src/constants/action-types.js" />
       <change beforePath="$PROJECT_DIR$/beer-narnia/src/index.js" afterPath="$PROJECT_DIR$/beer-narnia/src/index.js" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/reducers/CartReducer.js" afterPath="$PROJECT_DIR$/beer-narnia/src/reducers/CartReducer.js" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/src/reducers/UserReducer.js" afterPath="$PROJECT_DIR$/beer-narnia/src/reducers/UserReducer.js" />
-      <change beforePath="$PROJECT_DIR$/beer-narnia/utils/roles.js" afterPath="$PROJECT_DIR$/beer-narnia/utils/roles.js" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/src/reducers/index.js" afterPath="$PROJECT_DIR$/beer-narnia/src/reducers/index.js" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/utils/articlesService.js" afterPath="$PROJECT_DIR$/beer-narnia/utils/articlesService.js" />
+      <change beforePath="$PROJECT_DIR$/beer-narnia/utils/usersService.js" afterPath="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerCountry.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx">
+      <file leaf-file-name="BeerDetailsEditable.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerDetailsEditable/BeerDetailsEditable.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            <state relative-caret-position="438">
+              <caret line="137" column="30" lean-forward="false" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -54,21 +60,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usersService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-narnia/utils/usersService.js">
+      <file leaf-file-name="CartItem.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="143" column="34" lean-forward="false" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requester.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/beer-narnia/utils/requester.js">
+      <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="61" />
+            <state relative-caret-position="234">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beer-details.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerDetails/beer-details.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articlesService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/utils/articlesService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -77,8 +105,8 @@
       <file leaf-file-name="Login.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Login/Login.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1432">
-              <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="86" column="14" lean-forward="false" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="70" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -86,33 +114,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/UserReducer.js">
+      <file leaf-file-name="Beer.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Beer/Beer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateIsAdmin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/updateIsAdmin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+            <state relative-caret-position="812">
+              <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action-types.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-narnia/src/constants/action-types.js">
+      <file leaf-file-name="beer.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Beer/beer.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="51">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cart.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -133,40 +169,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/beer-narnia/.gitignore" />
-        <option value="$PROJECT_DIR$/beer-narnia/package.json" />
-        <option value="$PROJECT_DIR$/beer-narnia/package-lock.json" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/reducers/index.js" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/actions/updateCart.js" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerBoxList/BeerBoxList.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/actions/updateCartItems.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.js" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/App.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.js" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/components/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/common/Button/Button.jsx" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/common/Button/button.less" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/Header/header.less" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/beer-box.less" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/assets/styles/index.less" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/CartItemsList/cart-items-list.less" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/CartItem/cart-item.less" />
         <option value="$PROJECT_DIR$/beer-narnia/src/reducers/CartReducer.js" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/CartItemsList/CartItemsList.jsx" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/Admins/Admins.jsx" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/index.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/actions/isAdmin.js" />
         <option value="$PROJECT_DIR$/beer-narnia/utils/roles.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/actions/checkIsAdmin.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/reducers/UserReducer.js" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/constants/action-types.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/actions/updateIsAdmin.js" />
         <option value="$PROJECT_DIR$/beer-narnia/src/components/Login/Login.jsx" />
-        <option value="$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/beer-narnia/utils/usersService.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/assets/styles/index.less" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/App.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/setBeerId.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/index.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/utils/beersService.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerId.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerName.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerCountry.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerDescription.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerType.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerImg.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerPrice.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/constants/action-types.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeer.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Beer/Beer.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/reducers/BeerDetails.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerDetails/BeerDetails.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Login/login.less" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Home/home.less" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerDetails/beer-details.less" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/assets/styles/components/layouts.less" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerDetailsEditable/beer-details-editable.less" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Home/Home.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/utils/articlesService.js" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/BeerDetailsEditable/BeerDetailsEditable.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Beer/beer.less" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx" />
+        <option value="$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less" />
       </list>
     </option>
   </component>
@@ -185,7 +238,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/beer-narnia/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="31" />
     <option name="y" value="30" />
     <option name="width" value="1386" />
@@ -229,66 +282,6 @@
               <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
               <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
               <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beeer-Narnia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beeer-Narnia" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-narnia" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -304,8 +297,14 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="9.5.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/workforce-planner" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../workforce-planner" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\My Projects\BeerNarnia-project\Beeer-Narnia\beer-narnia\src\actions\BeerActions" />
+      <recent name="C:\My Projects\BeerNarnia-project\Beeer-Narnia\beer-narnia\src\components" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,18 +331,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531158048866</updated>
-      <workItem from="1531158050549" duration="50983000" />
+      <workItem from="1531158050549" duration="77072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50983000" />
+    <option name="totallyTimeSpent" value="77072000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -375,244 +373,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beer-narnia/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/.eslintignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/.eslintrc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/common/Input/Input.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/common/Input/input.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/HomeReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/changeEmailInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/assets/styles/components/icons.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/LoginReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/initUsersStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/updateCartItems.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="82" lean-forward="false" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/common/Button/Button.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/common/Button/button.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Header/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerBoxList/beer-box-list.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerBox/beer-box.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1527">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/assets/styles/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerBoxList/BeerBoxList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/CartItemsList/cart-items-list.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/CartItem/cart-item.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -635,72 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/CartReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Home/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1105">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Home/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="70" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/utils/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beer-narnia/src/constants/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -717,21 +415,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/utils/roles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Admins/Admins.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -751,40 +439,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/constants/action-types.js">
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/UserReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Login/Login.jsx">
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/assets/styles/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1432">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="19" column="79" lean-forward="false" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/CartReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/initUsersStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="25" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/UserReducer.js">
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx">
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="81">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -797,10 +509,290 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/utils/roles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/utils/beersService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="38" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerName.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="76" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerId.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="71" lean-forward="false" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerImg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="73" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerPrice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="74" lean-forward="false" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/constants/action-types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeerCountry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/actions/BeerActions/setBeer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="63" lean-forward="true" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Login/login.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/reducers/BeerDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerBoxList/beer-box-list.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Home/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerBox/beer-box.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="62" column="2" lean-forward="false" selection-start-line="62" selection-start-column="2" selection-end-line="71" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/common/Input/Input.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/common/Input/input.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerDetails/BeerDetails.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="72" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/assets/styles/components/layouts.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/utils/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerBox/BeerBox.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="153" column="34" lean-forward="false" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerDetailsEditable/beer-details-editable.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/beer-narnia/utils/requester.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="61" />
+        <state relative-caret-position="238">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Home/Home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="43" column="74" lean-forward="false" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Login/Login.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="86" column="14" lean-forward="false" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/utils/articlesService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerDetailsEditable/BeerDetailsEditable.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="137" column="30" lean-forward="false" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/CartItem/CartItem.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="143" column="34" lean-forward="false" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/BeerDetails/beer-details.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Beer/Beer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Beer/beer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Cart/Cart.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-narnia/src/components/Cart/cart.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>

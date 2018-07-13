@@ -1,11 +1,13 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import {withRouter} from 'react-router-dom';
 
 import {connect} from "react-redux";
 
 import updateCart from '../../actions/updateCart';
 import updateCartItems from '../../actions/updateCartItems';
+import setBeerId from '../../actions/BeerActions/setBeerId';
 
 
 class CartItem extends PureComponent {
@@ -19,6 +21,20 @@ class CartItem extends PureComponent {
         this.unHoverBox = this.unHoverBox.bind(this);
         this.plusOneCount = this.plusOneCount.bind(this);
         this.minusOneCount = this.minusOneCount.bind(this);
+        this.openBeerDetails = this.openBeerDetails.bind(this);
+    }
+
+
+    openBeerDetails(event){
+        const {cart, setBeerId, history} = this.props;
+
+        const indexOfBeerToGet = Number(event.target.getAttribute('index'));
+
+        const beer = cart[indexOfBeerToGet];
+
+        setBeerId(beer._id);
+        sessionStorage.setItem('beerId', beer._id);
+        history.push('/beer');
     }
 
     changeBeerCount(event) {
@@ -87,7 +103,7 @@ class CartItem extends PureComponent {
                 id={id}
             >
                 <div className="imgAndInfo">
-                    <img src={image} alt={name}/>
+                    <img src={image} alt={name} onClick={this.openBeerDetails} index={index}/>
                     <div className="infoBeer">
                         <label>Name: {name}</label>
                         <label className="beer-box-price">Price: {price}&euro;</label>
@@ -118,14 +134,14 @@ export default connect(
     }),
     {
         updateCart,
-        updateCartItems
+        updateCartItems,
+        setBeerId
     }
-)(CartItem);
+)(withRouter(CartItem));
 
 CartItem.propTypes = {
     name: PropTypes.string,
     description: PropTypes.string,
-    price: PropTypes.number,
     image: PropTypes.string,
     id: PropTypes.string,
     updateCart: PropTypes.func,

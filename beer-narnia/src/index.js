@@ -19,7 +19,7 @@ import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import Home from './components/Home/Home.jsx';
 import Cart from './components/Cart/Cart.jsx';
-import Admins from './components/Admins/Admins.jsx';
+import Beer from './components/Beer/Beer.jsx';
 
 
 const store = createStore(reducers);
@@ -31,7 +31,7 @@ render(
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/cart" component={Cart}/>
-                    <PrivateRoute path="/admins" component={Admins}/>
+                    <Route path='/beer' component={Beer}/>
                     <PublicRoute path="/register" component={Register}/>
                     <PublicRoute path="/login" component={Login}/>
                     <Route component={PageNotFound}/>
