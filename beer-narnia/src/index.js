@@ -18,6 +18,8 @@ import App from './App';
 import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import Home from './components/Home/Home.jsx';
+import Cart from './components/Cart/Cart.jsx';
+import Admins from './components/Admins/Admins.jsx';
 
 
 const store = createStore(reducers);
@@ -28,6 +30,8 @@ render(
             <App>
                 <Switch>
                     <Route exact path="/" component={Home}/>
+                    <Route path="/cart" component={Cart}/>
+                    <PrivateRoute path="/admins" component={Admins}/>
                     <PublicRoute path="/register" component={Register}/>
                     <PublicRoute path="/login" component={Login}/>
                     <Route component={PageNotFound}/>

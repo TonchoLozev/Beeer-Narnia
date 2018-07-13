@@ -1,5 +1,5 @@
 import React from 'react';
-import BeerBox from '../BeerBox/BeerBox.js';
+import BeerBox from '../BeerBox/BeerBox.jsx';
 import PropTypes from 'prop-types';
 
 const BeerBoxList = ({beersToShow, pageNum}) => {

@@ -2,9 +2,12 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import updateCart from '../../actions/updateCart';
 import {connect} from "react-redux";
+
+import updateCart from '../../actions/updateCart';
+import updateCartItems from '../../actions/updateCartItems';
 import initHomeStore from "../../actions/initHomeStore";
+
 
 
 class BeerBox extends PureComponent {
@@ -29,7 +32,7 @@ class BeerBox extends PureComponent {
     }
 
     addInCart(event) {
-        const {cart, updateCart, pageNum, allBeers, beersToShow} = this.props;
+        const {cart, updateCart, pageNum, allBeers, beersToShow, updateCartItems} = this.props;
         const {beerCount} = this.state;
 
         const indexOfBeerToGet = Number(event.target.getAttribute('index'));
@@ -55,6 +58,7 @@ class BeerBox extends PureComponent {
         else {
             beer.count = Number(beerCount);
             arrCart.push(beer);
+            updateCartItems(arrCart.length);
         }
         updateCart(arrCart);
         sessionStorage.setItem('cart', JSON.stringify(cart));
@@ -123,7 +127,8 @@ export default connect(
         allBeers: state.Home.get('allBeers')
     }),
     {
-        updateCart
+        updateCart,
+        updateCartItems
     }
 )(BeerBox);
 
@@ -134,6 +139,7 @@ BeerBox.propTypes = {
     image: PropTypes.string,
     id: PropTypes.number,
     updateCart: PropTypes.func,
-    allBeers: PropTypes.array
+    allBeers: PropTypes.array,
+    updateCartItems: PropTypes.func
 };
 

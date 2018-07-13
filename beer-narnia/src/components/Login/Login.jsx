@@ -11,11 +11,11 @@ import changeUsernameInput from '../../actions/changeUsernameInput';
 import changePasswordInput from '../../actions/changePasswordInput';
 import deleteUsernameInput from '../../actions/deleteUsernameInput';
 import deletePasswordInput from '../../actions/deletePasswordInput';
+import updateIsAdmin from '../../actions/updateIsAdmin';
 import validateLogin from '../../helpers/validateLogin';
 
 import {auth} from '../../../utils/auth';
-
-
+import {isAdmin} from '../../../utils/roles';
 
 
 class Login extends PureComponent {
@@ -63,6 +63,7 @@ class Login extends PureComponent {
         const {
             usernameInput,
             passwordInput,
+            updateIsAdmin,
             deletePasswordInput,
             deleteUsernameInput,
             initUserStore,
@@ -77,6 +78,7 @@ class Login extends PureComponent {
                 sessionStorage.setItem('roleId', roleId);
 
                 initUserStore(userInfo.username);
+                updateIsAdmin(isAdmin());
                 deletePasswordInput();
                 deleteUsernameInput();
 
@@ -153,6 +155,7 @@ export default connect(
         changePasswordInput,
         deleteUsernameInput,
         deletePasswordInput,
+        updateIsAdmin
     }
 )(Login);
 
@@ -162,6 +165,7 @@ Login.propTypes = {
     changePasswordInput: PropTypes.func,
     deleteUsernameInput: PropTypes.func,
     deletePasswordInput: PropTypes.func,
+    updateIsAdmin: PropTypes.func,
     usernameInput: PropTypes.string,
     passwordInput: PropTypes.string,
     history: PropTypes.object

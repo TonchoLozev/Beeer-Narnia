@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 
-import BeerBoxList from '../BeerBoxList/BeerBoxList';
+import BeerBoxList from '../BeerBoxList/BeerBoxList.jsx';
 
 import initHomeStore from '../../actions/initHomeStore';
 
@@ -39,12 +39,6 @@ class Home extends PureComponent {
             sessionStorage.setItem('cart', JSON.stringify(cart));
             beers.getAllBeers().then(allBeers => initHomeStore(allBeers));
         });
-    }
-
-    componentWillUnmount(){
-        const {cart} = this.props;
-        console.log(cart);
-        sessionStorage.setItem('cart', JSON.stringify(cart));
     }
 
     render() {
