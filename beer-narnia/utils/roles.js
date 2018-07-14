@@ -9,9 +9,16 @@ export let assignRole = (() => {
 
     function makeAdminUser(userId) {
         let data = {userid: userId, roleid: '40e731c1-824f-485b-8d98-ffb30d85b6a9'};
-        return requester.post('rpc', 'custom/addRole', 'kinvey', data);
+        return removeRegularRole(userId).then(res => {
+            return requester.post('rpc', 'custom/addRole', 'kinvey', data);
+        }).catch(err => console.log(err))
+
     }
 
+    function removeRegularRole(userId){
+        let data = {userid: userId, roleid: '2b8b07ed-17cb-4737-9361-878e69250df0'};
+        return requester.post('rpc', 'custom/deleteRole', 'kinvey', data);
+    }
     return {
         makeAdminUser,
         makeRegularUser

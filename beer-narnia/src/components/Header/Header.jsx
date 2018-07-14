@@ -12,6 +12,7 @@ import updateIsAdmin from '../../actions/updateIsAdmin';
 
 import {auth} from '../../../utils/auth';
 import {isAdmin} from '../../../utils/roles'
+
 class Header extends PureComponent {
     constructor(props) {
         super(props);
@@ -19,7 +20,7 @@ class Header extends PureComponent {
         this.logoutFunc = this.logoutFunc.bind(this);
     }
 
-   async logoutFunc() {
+    async logoutFunc() {
         const {deleteUserStore, updateIsAdmin, history} = this.props;
 
         deleteUserStore();
@@ -48,6 +49,8 @@ class Header extends PureComponent {
                 <Button nameClass="navButton" label="Cart" icon="icon-cart" link="/cart" onClick={onClick}/>
                 <i className={itemsInfo}>{cartItems}</i>
             </div>
+            {checkIsAdmin ?
+                <Button nameClass="navButton" label="Requests" icon="icon-users" link="/requests" onClick={onClick}/> : ''}
             {username !== '' && !checkIsAdmin ?
                 <Button nameClass="navButton" label="Request access" link='/request-access' onClick={onClick}/> : ''}
             <Button nameClass="navButton" label="Home" link='/' onClick={onClick}/>

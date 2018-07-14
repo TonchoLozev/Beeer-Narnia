@@ -1,8 +1,8 @@
 import {requester} from './requester';
 
 export const requestAccess = (() => {
-    function getAllBeers() {
-        let endpoint = 'beers?query={}&sort={"_kmd.ect": -1}';
+    function getAllRequests() {
+        let endpoint = 'request-access?query={}&sort={"_kmd.ect": -1}';
         return requester.get('appdata', endpoint, 'kinvey');
     }
 
@@ -23,8 +23,8 @@ export const requestAccess = (() => {
         return requester.update('appdata', endpoint, 'kinvey', data)
     }
 
-    function deleteBeer(beerId) {
-        let endpoint = `beers/${beerId}`;
+    function deleteRequest(requestId) {
+        let endpoint = `request-access/${requestId}`;
         return requester.remove('appdata', endpoint, 'kinvey')
     }
 
@@ -34,11 +34,11 @@ export const requestAccess = (() => {
     }
 
     return {
-        getAllBeers,
+        getAllRequests,
         getBeer,
         createRequestAccess,
         editBeer,
-        deleteBeer,
+        deleteRequest,
         getPostDetails
     };
 })();

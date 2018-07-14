@@ -34,3 +34,5 @@ export const SET_REASON = 'SET_REASON';
 export const DELETE_FIRST_NAME = 'DELETE_FIRST_NAME';
 export const DELETE_LAST_NAME = 'DELETE_LAST_NAME';
 export const DELETE_REASON = 'DELETE_REASON';
+
+export const SET_REQUESTS = 'SET_REQUESTS';

@@ -6,6 +6,7 @@ import Home from './HomeReducer';
 import Cart from './CartReducer';
 import Beer from './BeerDetailsReducer'
 import RequestAccess from './RequestAccessReducer';
+import Requests from './RequestsReducer'
 
 export default combineReducers({
     Register,
@@ -14,5 +15,6 @@ export default combineReducers({
     Home,
     Cart,
     Beer,
-    RequestAccess
+    RequestAccess,
+    Requests
 });

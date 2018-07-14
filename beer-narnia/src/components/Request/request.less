@@ -1,0 +1,27 @@
+.request {
+  display: flex;
+  justify-content: space-around;
+
+  span{
+    width: 100px;
+    font-size: 13px;
+  }
+
+  i{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .reason-request{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:hover{
+      overflow: visible;
+      white-space: normal;
+      height: auto;
+      text-align: center;
+    }
+  }
+}

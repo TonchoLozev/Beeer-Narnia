@@ -11,7 +11,6 @@ class Cart extends PureComponent {
 
     render() {
         const {cartItems} = this.props;
-        console.log(cartItems)
         return (
             <div className="cart">
                 {cartItems === 0 ? <p>Cart is empty</p> : ''}
