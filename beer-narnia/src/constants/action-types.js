@@ -24,6 +24,13 @@ export const SET_BEER_ID = 'SET_BEER_ID';
 export const SET_BEER_NAME = 'SET_BEER_NAME';
 export const SET_BEER_COUNTRY = 'SET_BEER_COUNTRY';
 export const SET_BEER_PRICE = 'SET_BEER_PRICE';
-export const SET_BEER_TYPE  = 'SET_BEER_TYPE';
+export const SET_BEER_TYPE = 'SET_BEER_TYPE';
 export const SET_BEER_DESCRIPTION = 'SET_BEER_DESCRIPTION';
 export const SET_BEER_IMG = 'SET_BEER_IMG';
+
+export const SET_FIRST_NAME = 'SET_FIRST_NAME';
+export const SET_LAST_NAME = 'SET_LAST_NAME';
+export const SET_REASON = 'SET_REASON';
+export const DELETE_FIRST_NAME = 'DELETE_FIRST_NAME';
+export const DELETE_LAST_NAME = 'DELETE_LAST_NAME';
+export const DELETE_REASON = 'DELETE_REASON';

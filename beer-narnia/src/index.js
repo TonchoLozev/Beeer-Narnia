@@ -20,6 +20,7 @@ import Register from './components/Register/Register.jsx';
 import Home from './components/Home/Home.jsx';
 import Cart from './components/Cart/Cart.jsx';
 import Beer from './components/Beer/Beer.jsx';
+import RequestAccess from './components/RequestAccess/RequestAcess.jsx';
 
 
 const store = createStore(reducers);
@@ -32,6 +33,7 @@ render(
                     <Route exact path="/" component={Home}/>
                     <Route path="/cart" component={Cart}/>
                     <Route path='/beer' component={Beer}/>
+                    <PrivateRoute path="/request-access" component={RequestAccess}/>
                     <PublicRoute path="/register" component={Register}/>
                     <PublicRoute path="/login" component={Login}/>
                     <Route component={PageNotFound}/>

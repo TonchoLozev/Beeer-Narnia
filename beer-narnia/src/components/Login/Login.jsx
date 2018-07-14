@@ -73,7 +73,6 @@ class Login extends PureComponent {
         if (!validateLogin(usernameInput, passwordInput)) {
             auth.login(usernameInput, passwordInput).then(userInfo => {
                 auth.saveSession(userInfo);
-
                 let roleId = userInfo._kmd.roles[0].roleId;
                 sessionStorage.setItem('roleId', roleId);
 

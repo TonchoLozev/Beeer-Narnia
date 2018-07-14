@@ -11,8 +11,7 @@ import deleteUserStore from '../../actions/deleteUserStore';
 import updateIsAdmin from '../../actions/updateIsAdmin';
 
 import {auth} from '../../../utils/auth';
-import {isAdmin} from '../../../utils/roles';
-
+import {isAdmin} from '../../../utils/roles'
 class Header extends PureComponent {
     constructor(props) {
         super(props);
@@ -20,17 +19,19 @@ class Header extends PureComponent {
         this.logoutFunc = this.logoutFunc.bind(this);
     }
 
-    logoutFunc() {
+   async logoutFunc() {
         const {deleteUserStore, updateIsAdmin, history} = this.props;
 
         deleteUserStore();
-        auth.logout().then(res => {
+        await auth.logout().then(res => {
             sessionStorage.removeItem('roleId');
             sessionStorage.removeItem('authtoken');
             sessionStorage.removeItem('username');
             sessionStorage.removeItem('email');
             sessionStorage.removeItem('userId');
+
             updateIsAdmin(isAdmin());
+
             history.push('/');
         });
         NotificationManager.info('You are logged out now');
@@ -47,6 +48,8 @@ class Header extends PureComponent {
                 <Button nameClass="navButton" label="Cart" icon="icon-cart" link="/cart" onClick={onClick}/>
                 <i className={itemsInfo}>{cartItems}</i>
             </div>
+            {username !== '' && !checkIsAdmin ?
+                <Button nameClass="navButton" label="Request access" link='/request-access' onClick={onClick}/> : ''}
             <Button nameClass="navButton" label="Home" link='/' onClick={onClick}/>
             {username !== '' ? <Button nameClass="navButton" label="Logout" onClick={this.logoutFunc}/> :
                 <div className="authBtns">
@@ -62,6 +65,7 @@ export default connect(
     state => ({
         username: state.User.get('username'),
         cartItems: state.Cart.get('cartItems'),
+        checkIsAdmin: state.User.get('checkIsAdmin')
     }),
     {
         deleteUserStore,

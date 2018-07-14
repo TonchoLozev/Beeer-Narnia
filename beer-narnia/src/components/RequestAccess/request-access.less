@@ -1,0 +1,121 @@
+.request-access{
+  min-height: 613px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  .request-access-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .request-access-buttons{
+    display:flex;
+    justify-content: space-between;
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  ::-ms-clear, ::-ms-reveal {
+    display: none;
+  }
+
+  label {
+    padding-bottom: 7px;
+    height: 19px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    color: @colorTextLabels;
+  }
+  .input-and-icon {
+    border-bottom: 1px solid @colorBorderUnderLine;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .icon-cross{
+      font-size: 13px;
+      padding-top: 10px;
+    }
+
+    .icon-eye{
+      padding-top: 10px;
+    }
+    input {
+      border-width: 0;
+      width: 448px;
+      padding-bottom: 7px;
+      &:focus {
+        outline: none;
+      }
+    }
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px white inset;
+    }
+    i {
+      cursor: pointer;
+    }
+  }
+}
+
+.text-area-reason {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  ::-ms-clear, ::-ms-reveal {
+    display: none;
+  }
+
+  label {
+    padding-bottom: 12px;
+    height: 19px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    color: @colorTextLabels;
+  }
+
+  .input-and-icon {
+    border-bottom: 1px solid @colorBorderUnderLine;
+    border-top: 1px solid @colorBorderUnderLine;
+    position: relative;
+    margin-top: 16px;
+
+    textarea {
+      border-width: 0;
+      width: 448px;
+      height: 130px;
+      padding-bottom: 7px;
+      resize: none;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea::placeholder {
+      font-family: 'Roboto', sans-serif;
+      width: 343px;
+      height: 16px;
+      font-size: 13.5px;
+      padding-top: 6px;
+    }
+
+    i {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}
