@@ -1,0 +1,36 @@
+.comment{
+  display: flex;
+
+  .icon-cross{
+    font-size: 11px;
+    align-self: center;
+    margin-left: 5px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .comment-and-time{
+    display: flex;
+    flex-direction: column;
+
+    .comment-content{
+      font-size: 13px;
+      border-bottom: 1px solid @colorBorderUnderLine;
+      width: 200px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      &:hover{
+        overflow: visible;
+        white-space: normal;
+        height: auto;
+      }
+    }
+
+    .comment-time{
+      font-size: 9px;
+    }
+  }
+}

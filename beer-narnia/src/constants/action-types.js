@@ -36,3 +36,6 @@ export const DELETE_LAST_NAME = 'DELETE_LAST_NAME';
 export const DELETE_REASON = 'DELETE_REASON';
 
 export const SET_REQUESTS = 'SET_REQUESTS';
+
+export const SET_COMMENT = 'SET_COMMENT';
+export const SET_COMMENTS = 'SET_COMMENTS';

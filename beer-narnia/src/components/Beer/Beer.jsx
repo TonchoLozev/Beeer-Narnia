@@ -6,9 +6,11 @@ import {connect} from "react-redux";
 
 import BeerDetails from '../BeerDetails/BeerDetails.jsx';
 import BeerDetailsEditable from '../BeerDetailsEditable/BeerDetailsEditable.jsx';
-import Input from '../common/Input/Input.jsx';
+import PostComment from '../PostComment/PostComment.jsx';
+import Comments from '../Comments/Comments.jsx';
 
 import {beers} from '../../../utils/articlesService';
+import {commentsService} from "../../../utils/commentsService";
 
 import setBeer from '../../actions/BeerActions/setBeer';
 import setBeerName from '../../actions/BeerActions/setBeerName';
@@ -17,6 +19,7 @@ import setBeerPrice from '../../actions/BeerActions/setBeerPrice';
 import setBeerImg from '../../actions/BeerActions/setBeerImg';
 import setBeerCountry from '../../actions/BeerActions/setBeerCountry';
 import setBeerDescription from '../../actions/BeerActions/setBeerDescription';
+import setComments from '../../actions/CommentsActions/setComments';
 
 
 class Beer extends PureComponent {
@@ -25,7 +28,7 @@ class Beer extends PureComponent {
     }
 
     async componentDidMount() {
-        const {beerId} = this.props;
+        const {beerId, setComments} = this.props;
 
         await beers.getBeer(beerId).then(beer => {
             const {
@@ -35,7 +38,8 @@ class Beer extends PureComponent {
                 setBeerPrice,
                 setBeerImg,
                 setBeerCountry,
-                setBeerDescription} = this.props;
+                setBeerDescription
+            } = this.props;
             const {name, description, price, img, country, type} = beer;
 
             setBeer(beer);
@@ -47,13 +51,19 @@ class Beer extends PureComponent {
             setBeerDescription(description);
 
         }).catch(err => console.log(err));
+
+        commentsService.getAllComments(beerId).then(comments =>{
+            setComments(comments)
+        }).catch(err => console.log(err));
     }
 
     render() {
-        const {checkIsAdmin} = this.props;
+        const {checkIsAdmin, username} = this.props;
         return (
             <div className="beer-page">
                 {checkIsAdmin ? <BeerDetailsEditable/> : <BeerDetails/>}
+                {username !== '' ? <PostComment/> : <p>You have to be logged in to post comments</p>}
+                <Comments/>
             </div>
         );
     }
@@ -61,16 +71,18 @@ class Beer extends PureComponent {
 
 export default connect(
     state => ({
+        username: state.User.get('username'),
         checkIsAdmin: state.User.get('checkIsAdmin'),
         beerId: state.Beer.get('beerId')
-    }),{
+    }), {
         setBeer,
         setBeerName,
         setBeerType,
         setBeerPrice,
         setBeerImg,
         setBeerCountry,
-        setBeerDescription
+        setBeerDescription,
+        setComments
     }
 )(Beer);
 
@@ -82,7 +94,8 @@ Beer.propTypes = {
     setBeerPrice: PropTypes.func,
     setBeerImg: PropTypes.func,
     setBeerCountry: PropTypes.func,
-    setBeerDescription: PropTypes.func
+    setBeerDescription: PropTypes.func,
+    setComments: PropTypes.func
 
 };
 

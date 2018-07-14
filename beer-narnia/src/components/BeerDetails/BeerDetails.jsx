@@ -13,7 +13,6 @@ import updateCart from '../../actions/updateCart';
 import updateCartItems from "../../actions/updateCartItems";
 
 
-
 class BeerDetails extends PureComponent {
     constructor(props) {
         super(props);
@@ -74,7 +73,7 @@ class BeerDetails extends PureComponent {
     }
 
     render() {
-        const {beerName, beerType, beerPrice, beerDescription, beerCountry, beerImg} = this.props;
+        const {beerName, beerType, beerPrice, beerDescription, beerCountry, beerImg, username} = this.props;
         const {beerCount} = this.state;
         return (
             <div className="beer-details">

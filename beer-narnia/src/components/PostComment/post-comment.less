@@ -1,5 +1,6 @@
-.text-area-description {
-  padding-top: 10px;
+.post-comment-area {
+  padding-top: 30px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
@@ -22,13 +23,14 @@
   .input-and-icon {
     border-bottom: 1px solid @colorBorderUnderLine;
     border-top: 1px solid @colorBorderUnderLine;
-    position: relative;
     margin-top: 16px;
+    display: flex;
+    align-items: center;
 
     textarea {
       border-width: 0;
-      width: 448px;
-      height: 130px;
+      width: 300px;
+      height: 50px;
       padding-bottom: 7px;
       resize: none;
       &:focus {
@@ -45,9 +47,6 @@
     }
 
     i {
-      color: black;
-      position: absolute;
-      right: 0;
       cursor: pointer;
     }
   }
